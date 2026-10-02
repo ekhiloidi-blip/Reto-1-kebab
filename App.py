@@ -10,15 +10,23 @@ def menu_principal_str():
 usuario_introducido_str=str(input("Nombre de usuario: "))
 contrasenya_introducida_int=int(input("Contraseña: "))
 
+
 if usuario_introducido_str==USUARIO_STR and contrasenya_introducida_int==CONTRASENYA_INT:
     print("Se ha iniciado la sesión correctamente.\n")
-    input(menu_principal_str())
 
-    while menu_principal_str != 0:
-        if menu_principal_str == 1:
-            print ("limpieza")
-        if menu_principal_str == 2:
-            print ("diagnostico del dispositivo")
+    opcion=-1
+    while opcion != 0:
+        (menu_principal_str())
+        opcion=int(input("Selecciona una opcion: "))
+
+        if opcion == 1:
+            print ("limpieza\n")
+        elif opcion == 2:
+            print ("diagnostico del dispositivo\n")
+        elif opcion==0:
+            print("Cerrando el programa...")
+        else:
+            print("Opción no valida. Intentalo de nuevo.\n")
 else:
     print("Usuario y/o contraseña incorrecta. Vuelve a intentarlo.")
 
