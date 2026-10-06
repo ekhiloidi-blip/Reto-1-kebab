@@ -119,34 +119,24 @@ if usuario_introducido_str==USUARIO_STR and contrasenya_introducida_int==CONTRAS
                         "Solución: No uses el dispositivo mientras se carga y retira la funda protectora durante la carga si retiene mucho calor.\n")
 
                 elif opcion_menu_diagnostico ==3:
-                    pregunta_almacenamiento_1_int=int(input("¿Te sale el mensaje de sistema Almacenamiento casi lleno? \n
-                    "1.Si\n
+                    pregunta_almacenamiento_1_int=int(input("¿Te sale el mensaje de sistema 'Almacenamiento casi lleno'? \n"
+                    "1.Si\n"
                     "2.No\n")) 
-                    pregunta_almacenamiento_2_int=int(input("¿Te sale el mensaje de sistema Almacenamiento casi lleno? \n
-                    "1.Si\n
+                    pregunta_almacenamiento_2_int=int(input("¿Tienes muchas fotos, vídeos o descargas antiguas sin borrar? \n"
+                    "1.Si\n"
                     "2.No\n")) 
-                    pregunta_almacenamiento_3_int=int(input("¿Te sale el mensaje de sistema Almacenamiento casi lleno? \n
-                    "1.Si\n
-                    "2.No\n")) 
-                    
+                   
                     if pregunta_almacenamiento_1_int==1:
-                      print("La memoria se ha llenado con archivos invisibles (caché de WhatsApp, redes sociales o archivos temporales).\n" \
+                      print("Problema: La memoria se ha llenado con archivos invisibles (caché de WhatsApp, redes sociales o archivos temporales).\n" \
                         "Solución:  Limpia la memoria caché general del dispositivo y elimina las conversaciones o archivos pesados guardados dentro de las apps de mensajería.\n")
                     
-                    elif Almacenamiento_2_int==1:
-                        print("Acumulación de archivos personales. Aún tienes espacio, pero estás cerca del límite.\n" \
+                    elif pregunta_almacenamiento_2_int==1:
+                        print("Problema: Acumulación de archivos personales. Aún tienes espacio, pero estás cerca del límite.\n" \
                         "Solución: Revisa tu galería, elimina los vídeos más largos, vacía la carpeta de descargas y la papelera de reciclaje.\n")    
                     
                     elif pregunta_almacenamiento_1_int==1 and pregunta_almacenamiento_2_int==1:
-                        print(" Memoria del dispositivo en estado crítico por exceso de archivos guardados.\n" \
-                        "Pasa tus fotos y vídeos antiguos a un ordenador o a la nube (como Google Drive o iCloud) y borra del dispositivo todo lo que ya esté guardado a salvo.\n")    
-
-
-
-
-                
-
-                    
+                        print("Problema: Memoria del dispositivo en estado crítico por exceso de archivos guardados.\n" \
+                        "Solución: Pasa tus fotos y vídeos antiguos a un ordenador o a la nube (como Google Drive o iCloud) y borra del dispositivo todo lo que ya esté guardado a salvo.\n")    
 
                 elif opcion_menu_diagnostico==0:
                     print("Volver atrás\n")
