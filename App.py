@@ -1,8 +1,10 @@
+import time
+
 USUARIO_STR=str("usuario")
 CONTRASENYA_INT=int(1234)
 
 def menu_principal_str():
-    print("Elige la operación que necesites realizar: \n" \
+    print("\nElige la operación que necesites realizar: \n" \
     "1. Limpieza del dispostivo. \n" \
     "2. Diagnostico del dispositivo. \n" \
     "0. Cerrar el programa. \n")
@@ -28,7 +30,15 @@ if usuario_introducido_str==USUARIO_STR and contrasenya_introducida_int==CONTRAS
         opcion_menu_principal=int(input("Selecciona una opción: "))
 
         if opcion_menu_principal == 1:
-            print ("limpieza con barra progresiva\n")
+            print("Cargando...\n", end="", flush=True)
+            for x in range(0,101,10):
+                print("█", end=" ", flush=True)#Para que el contador salga en la misma linea
+                time.sleep(0.4)
+            print(x,"%")
+
+            print("\nCarga completada")
+            time.sleep(0.3)
+            #print ("limpieza con barra progresiva\n")
 
         elif opcion_menu_principal == 2:
              
