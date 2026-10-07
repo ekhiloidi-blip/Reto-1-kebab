@@ -40,6 +40,12 @@ if usuario_introducido_str==USUARIO_STR and contrasenya_introducida_int==CONTRAS
             time.sleep(0.3)
             #print ("limpieza con barra progresiva\n")
 
+            print("Se han eliminado los archivos repetidos y temporales. La limpieza de tu dispositivo se ha realizado con éxito")
+
+            
+
+            print()           
+
         elif opcion_menu_principal == 2:
              
              opcion_menu_diagnostico=-1
