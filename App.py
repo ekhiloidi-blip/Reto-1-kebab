@@ -1,8 +1,9 @@
-import time
+import time #Para poder utilizar la funcion de time.sleep
 
 USUARIO_STR=str("usuario")
 CONTRASENYA_INT=int(1234)
 
+#Define la funcion que imprimira el menu
 def menu_principal_str():
     print("\nElige la operación que necesites realizar: \n" \
     "1. Limpieza del dispostivo. \n" \
@@ -39,8 +40,8 @@ if incio_sesion_int==1:
             if opcion_menu_principal == 1:
                 print("Cargando...\n", end="", flush=True)
                 for x in range(0,101,10):
-                    print("█", end=" ", flush=True)#Para que el contador salga en la misma linea
-                    time.sleep(0.4)
+                    print("█", end=" ", flush=True)#end=" " para que salga en la misma línea; flush=True para que se imprima al momento
+                    time.sleep(0.4)#Para que tarde 0,4s en imprimirse
                 print(x,"%")
 
                 print("\nCarga completada")
